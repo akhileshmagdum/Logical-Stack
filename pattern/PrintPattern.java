@@ -8,7 +8,8 @@ public class PrintPattern {
     public static void main(String[] args) {
 //        printSquare(5);
 //        printRightTriangle(5);
-        printRightNumberTriangle(5);
+//        printRightNumberTriangle(5);
+        printRightNumberSeriesTriangle(5);
     }
 
     /**
@@ -42,6 +43,18 @@ public class PrintPattern {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    /**
+     * https://practice.geeksforgeeks.org/problems/triangle-number-1661428795/1
+     */
+    static void printRightNumberSeriesTriangle(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(i + " ");
             }
             System.out.println();
         }
