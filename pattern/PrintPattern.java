@@ -9,7 +9,8 @@ public class PrintPattern {
 //        printSquare(5);
 //        printRightTriangle(5);
 //        printRightNumberTriangle(5);
-        printRightNumberSeriesTriangle(5);
+//        printRightNumberSeriesTriangle(5);
+        printReverseRightTriangle(5);
     }
 
     /**
@@ -55,6 +56,18 @@ public class PrintPattern {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    /**
+     * https://practice.geeksforgeeks.org/problems/triangle-pattern/1
+     */
+    static void printReverseRightTriangle(int n) {
+        for (int i = n; i > 0; i--) {
+            for (int j = i; j > 0; j--) {
+                System.out.print("* ");
             }
             System.out.println();
         }
